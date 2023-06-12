@@ -6,66 +6,68 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <div>
-        First Name: * 
-        <input type="text" name="first_name" placeholder="First Name">
-    </div>
-    <div>
-        Last Name: * 
-        <input type="text" name="last_name" placeholder="Last Name">
-    </div>
-    <div>
-        Email Address: * 
-        <input type="email" name="email" placeholder="Email Address">
-    </div>
-    <div>
-        Password: * 
-        <input type="password" name="password">
-    </div>
-    <div>
-        Confirm Password: *
-        <input type="password" name="confirm_password">
-    </div>
-    <div>
-        Birthday: * 
-        <input type="date" name="dob">
-    </div>
-    <div>
-        Gender Identity:
-        <br>
-        <input type="radio" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" value="non-binary">
-        <label for="non-binary">Non-binary</label>
-        <input type="radio" name="gender" value="prefer-not-answer">
-        <label for="prefer-not-answer">I prefer not to answer</label>
-    </div>
-    <div>
-        A short descritpion about myself:
-        <br>
-        <textarea name="about-myself" cols="30" rows="3"></textarea>
-    </div>
-    <div>
-        Favorite Language:
-        <select name="language">
-            <option value="JavaScript">JavaScript</option>
-            <option value="Java">Java</option>
-            <option value="Python">Python</option>
-            <option value="Ruby">Ruby</option>
-        </select>
-    </div>
-    <div>
-        <input type="checkbox" name="email_updates" id="email_updates">
-        <label for="email_updates">Yes, I would like to receive periodic email updates</label>
-    </div>
-    <div>
-        <input type="submit" value="Create Account">
-    </div>
-    <div>
-        * Indiciates a required field
-    </div>
+    <form action="/process" method="post">
+        <div>
+            First Name: * 
+            <input type="text" name="first_name" placeholder="First Name">
+        </div>
+        <div>
+            Last Name: * 
+            <input type="text" name="last_name" placeholder="Last Name">
+        </div>
+        <div>
+            Email Address: * 
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div>
+            Password: * 
+            <input type="password" name="password">
+        </div>
+        <div>
+            Confirm Password: *
+            <input type="password" name="confirm_password">
+        </div>
+        <div>
+            Birthday: * 
+            <input type="date" name="dob">
+        </div>
+        <div>
+            Gender Identity:
+            <br>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="non-binary">
+            <label for="non-binary">Non-binary</label>
+            <input type="radio" name="gender" value="prefer-not-answer">
+            <label for="prefer-not-answer">I prefer not to answer</label>
+        </div>
+        <div>
+            A short descritpion about myself:
+            <br>
+            <textarea name="about-myself" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            Favorite Language:
+            <select name="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="email_updates" id="email_updates">
+            <label for="email_updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            * Indiciates a required field
+        </div>
+    </form>
 </body>
 </html>
 
