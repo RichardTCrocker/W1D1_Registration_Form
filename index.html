@@ -7,30 +7,37 @@
 <body>
     <h1>Registration Form</h1>
     <form action="/process" method="post">
+        <!--input for first name-->
         <div>
             First Name: * 
             <input type="text" name="first_name" placeholder="First Name">
         </div>
+        <!--input for last name-->
         <div>
             Last Name: * 
             <input type="text" name="last_name" placeholder="Last Name">
         </div>
+        <!--input for email address-->
         <div>
             Email Address: * 
             <input type="email" name="email" placeholder="Email Address">
         </div>
+        <!--input for password-->
         <div>
             Password: * 
             <input type="password" name="password">
         </div>
+        <!--input for confirm password-->
         <div>
             Confirm Password: *
             <input type="password" name="confirm_password">
         </div>
+        <!--input for date of birth-->
         <div>
             Birthday: * 
             <input type="date" name="dob">
         </div>
+        <!--input for gender identity-->
         <div>
             Gender Identity:
             <br>
@@ -43,11 +50,13 @@
             <input type="radio" name="gender" value="prefer-not-answer">
             <label for="prefer-not-answer">I prefer not to answer</label>
         </div>
+        <!--input for short description about user-->
         <div>
             A short descritpion about myself:
             <br>
             <textarea name="about-myself" cols="30" rows="3"></textarea>
         </div>
+        <!--input for favorite language-->
         <div>
             Favorite Language:
             <select name="language">
@@ -57,10 +66,12 @@
                 <option value="Ruby">Ruby</option>
             </select>
         </div>
+        <!--input for email updates?-->
         <div>
             <input type="checkbox" name="email_updates" id="email_updates">
             <label for="email_updates">Yes, I would like to receive periodic email updates</label>
         </div>
+        <!--input for submit button-->
         <div>
             <input type="submit" value="Create Account">
         </div>
